@@ -1,0 +1,219 @@
+/* utlizing the grid system to position all the elements */
+.main_container {
+    display: grid;
+    grid-template-rows: 1fr -1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 7fr 1fr;
+    place-items: center;
+    grid-template-rows: min-content;
+}
+
+.leftnav {
+    grid-row: 3;
+    place-items: start;
+    display: grid;
+    row-gap: 7em;
+}
+
+.Main_icons {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 83px;
+}
+
+img {
+    width: 300px;
+}
+
+.topnav {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-bottom: 1%;
+}
+
+.images {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    place-content: center;
+    
+}
+
+@font-face {
+    font-family: 'Mymeenfont';
+    src: url(Fonts/BebasNeue-Regular.ttf);
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.Title_logo {
+    font-family: 'Mymeenfont';
+}
+
+input {
+    border: 5px groove ;
+}
+
+.form_function {
+    display: flex;
+}
+
+.search_bar {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.search-button {
+    background: transparent;
+    margin-left: -15%;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.numberz {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+p {
+    opacity: 0;
+}
+
+#one {
+    opacity: 1;
+}
+
+.numberz:hover {
+    cursor: pointer;
+}
+
+.left_arrow_button {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+
+.right_arrow_button {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 62.55%;
+}
+
+.image_one:hover  {
+    cursor: pointer;
+}
+
+.image_two:hover {
+    cursor: pointer;
+}
+
+.arrow_buttons:hover .left_arrow_button {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+.arrow_buttons:hover .right_arrow_button {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.right_arrow_button_two {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 40.4%;
+}
+
+.arrow_buttons:hover .right_arrow_button_two {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.right_arrow_button_three {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 18.3%;
+}
+
+.arrow_buttons:hover .right_arrow_button_three {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#heart-like {
+    font-size: 35px;
+}
+
+#heart-like:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.images .fa-heart{
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+      transform: translate(-50%, -50%) scale(10);
+      opacity: 0;
+    }
+}
+
+#comment-bubble {
+    font-size: 35px;
+}
+
+#comment-bubble2 {
+    font-size: 35px;
+}
+
+#comment-bubble3 {
+    font-size: 35px;
+}
+
+#share-icon {
+    font-size: 35px;
+}
+
+
+.input1 {
+    position: relative;
+    bottom: 85px;
+    left: 22.5%;
+    visibility: hidden;
+}
+
+.input2 {
+    position: relative;
+    bottom: 85px;
+    left: 32%;
+    visibility: hidden;
+}
+
+.input3 {
+    position: relative;
+    bottom: 85px;
+    left: 42%;
+    visibility: hidden;
+}

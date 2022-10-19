@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMeen_MainPage</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="Main_Design.css" />
+  </head>
+
+  <body>
+    <main class="main_container">
+      <h3 class="Title_logo">MyMeen</h3>
+      <form action="/Main_page.html" method="get" class="form_function">
+        <input type="search" placeholder="search" class="search_bar" />
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <div class="numberz">
+        <p class="number" type="radio" name="toggle" id="one">1</p>
+        <p class="number" type="radio" name="toggle" id="two">2</p>
+        <p class="number" type="radio" name="toggle" id="three">3</p>
+      </div>
+
+      <nav class="leftnav">
+        <div class="icon1">
+          <a href="MyMeen/Friendpage.html">
+            <i class="fa fa-users fa-4x"></i>
+          </a>
+        </div>
+        <div>
+          <a href="MyMeen/Preferences.html">
+            <i class="fa fa-heart fa-4x"></i>
+          </a>
+        </div>
+        <div>
+          <a href="MyMeen/Global_Search.html">
+            <i class="fa fa-globe fa-4x"></i>
+          </a>
+        </div>
+        <div>
+          <a href="MyMeen/Settings.html">
+            <i class="fa fa-gear fa-4x"></i>
+          </a>
+        </div>
+      </nav>
+
+      <section class="topnav">
+        <i class="fa fa-user-hair-long"> Amelia </i>
+        <i class="fa fa-tree"> Nature </i>
+        <i class="fa fa-user"> Josh </i>
+      </section>
+
+      <section class="images">
+        <nav class="arrow_buttons">
+          <img src="Images/Female_Selfie.jpg" alt="" class="image_one" />
+          <button
+            type="button"
+            class="left_arrow_button"
+            title="See_Previous_Picture"
+          >
+            <i class="fa fa-circle-arrow-left"></i>
+          </button>
+          <button
+            type="button"
+            class="right_arrow_button"
+            title="See_Next_Picture"
+          >
+            <i class="fa fa-circle-arrow-right"></i>
+          </button>
+        </nav>
+        <nav class="arrow_buttons">
+          <img src="Images/Nature.jpg" alt="" class="image_two" />
+          <button
+            type="button"
+            class="left_arrow_button"
+            title="See_Previous_Picture"
+          >
+            <i class="fa fa-circle-arrow-left"></i>
+          </button>
+          <button
+            type="button"
+            class="right_arrow_button_two"
+            title="See_Next_Picture"
+          >
+            <i class="fa fa-circle-arrow-right"></i>
+          </button>
+        </nav>
+        <nav class="arrow_buttons">
+          <img src="Images/Male_selfie.jpg" alt="" class="image_three" />
+          <button
+            type="button"
+            class="left_arrow_button"
+            title="See_Previous_Picture"
+          >
+            <i class="fa fa-circle-arrow-left"></i>
+          </button>
+          <button
+            type="button"
+            class="right_arrow_button_three"
+            title="See_Next_Picture"
+          >
+            <i class="fa fa-circle-arrow-right"></i>
+          </button>
+        </nav>
+      </section>
+
+      <footer class="Main_icons">
+        <i class="fa fa-heart" id="heart-like" name="heartx">
+          <a href=""></a>
+        </i>
+        <i
+          class="fa fa-comment"
+          id="comment-bubble"
+          name="bubble"
+          onmousedown="createinput()"
+          onmouseup="removeinput()"
+        >
+          <a href=""></a>
+        </i>
+        <i class="fa fa-share" id="share-icon">
+          <a href=""></a>
+        </i>
+
+        <i class="fa fa-heart" id="heart-like" name="heartx">
+          <a href=""></a>
+        </i>
+        <i
+          class="fa fa-comment"
+          id="comment-bubble2"
+          name="bubble"
+          onmousedown="createinput2()"
+          onmouseup="removeinput2()"
+        >
+          <a href=""></a>
+        </i>
+
+        <i class="fa fa-share" id="share-icon">
+          <a href=""></a>
+        </i>
+
+        <i class="fa fa-heart" id="heart-like" name="heartx">
+          <a href=""></a>
+        </i>
+        <i
+          class="fa fa-comment"
+          id="comment-bubble3"
+          name="bubble"
+          onmousedown="createinput3()"
+          onmouseup="removeinput3()"
+        >
+          <a href=""></a>
+        </i>
+        <i class="fa fa-share" id="share-icon">
+          <a href=""></a>
+        </i>
+      </footer>
+    </main>
+    <input type="text" placeholder="type here" class="input1" id="inputone" />
+    <input type="text" placeholder="type here" class="input2" id="inputtwo" />
+    <input type="text" placeholder="type here" class="input3" id="inputthree" />
+  </body>
+  <script src="Main_page.js"></script>
+</html>
